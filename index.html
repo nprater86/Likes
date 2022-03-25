@@ -8,16 +8,64 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="card">
-        <div class="cardHeader">
-            <h1>Some User</h1>
-            <h3><span id="numLikes">0</span> Like(s)</h3>
-            <button class="likeBtn" onclick="increaseLikes()">Like</button>
+    <header>
+        <div class="header">
+            <h1>Network</h1>
         </div>
-        <div class="cardText">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus consequuntur explicabo a, molestias nemo! Possimus dignissimos voluptatibus optio architecto?</p>
+    </header>
+    <div class="main">
+        <div class="yourFeed">
+            <h1>Your Feed</h1>
+        </div>
+        <div class="columns">
+            <div class="columnLeft">
+                <div class="profileCard">
+                    <img class="profilePic" src="./images/user-circle.png" alt="">
+                    <a href="#"><h3>Add an avatar</h3></a>
+                    <h1>James Doe</h1>
+                </div>
+            </div>
+            <div class="columnRight">
+                <div class="card">
+                    <div class="cardHeader">
+                        <h1>Neil M</h1>
+                        <div class="likes">
+                            <h3><span id="neilmLikes">0</span> Like(s)</h3>
+                            <button class="likeBtn" onclick="increaseLikes(neilmLikes)">Like</button>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <p>I just set up this new discord bot, let me know what you all think. <a href="#">Link.</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardHeader">
+                        <h1>Nichole K</h1>
+                        <div class="likes">
+                            <h3><span id="nicholekLikes">0</span> Like(s)</h3>
+                            <button class="likeBtn" onclick="increaseLikes(nicholekLikes)">Like</button>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardHeader">
+                        <h1>Jim R</h1>
+                        <div class="likes">
+                            <h3><span id="jimrLikes">0</span> Like(s)</h3>
+                            <button class="likeBtn" onclick="increaseLikes(jimrLikes)">Like</button>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <p>I can't stop listening to the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s" target="_blank">new album</a>. Who else is liking it?</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
